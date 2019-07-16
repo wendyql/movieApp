@@ -1,0 +1,17 @@
+<!--pages/cinema/cinema.wxml-->
+ <wxs module="numberUtil" src="../../utils/two.wxs"></wxs>
+<view class='nav'>
+  <text class='chengd'>成都</text>
+  <input class='search' placeholder='找影院'>找影院</input>
+</view>
+<view class='cityList' wx:for='{{cityLists}}' wx:key>
+  <view class='movieAddress'>{{item.cinemaName}}</view> 
+  <view class='detailAddress'>{{item.address}}</view> 
+  <view class='tubiao'>
+    <text class='zuo'>座</text><text class='zuo1'>改签</text><text class='gai'>小吃</text><text class='gai'>折扣</text>
+  </view>
+  <view class='ka'>卡</view>
+  <text class='cuxiao'>限时￥9.9元起</text>
+ 
+  <text class='distance'>{{numberUtil.numberFormat(item.distance/1000)}}Km</text>
+</view>

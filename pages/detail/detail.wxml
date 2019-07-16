@@ -1,0 +1,26 @@
+<!--pages/detail/detail.wxml-->
+
+<view class='movieinfo'>
+
+  <image class='img' src='{{movie.poster}}'></image>
+  <view class='detail'>
+    <view class='movieName'>{{movie.title}}</view>
+    <van-rate value="{{ value }}" bind:change="onChange" />
+    <view class='juqing'>{{movie.genres}} {{movie.language}}</view>
+    <view class='actors'>{{movie.actors}}</view>
+    <view class='time'>时长：{{movie.runtime}}</view>
+    <view class='year'>上映时间：{{movie.year}}</view>
+  </view>
+
+  <view class='jianjie'>简介：{{movie.plot_simple}}</view>
+  <view class='des'>
+    <button class='want'>
+      <image class='wjx' src='../../images/xx1.png'></image>想看</button>
+    <button class='num' bindtap='onScore'>
+      <image class='tx' src='../../images/xx.png'></image>评分</button>
+  </view>
+</view>
+
+<view>
+  <button class='btn'>优惠购票</button>
+</view>

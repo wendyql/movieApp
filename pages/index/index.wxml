@@ -1,0 +1,29 @@
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" indicator-active-color="{{cur}}">
+    <block wx:for='{{imgUrls}}' bindtap='onAddClickHandler' wx:key>
+      <swiper-item>
+        <image src="{{item}}" class='slide-image' />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="araeBox" bindtap="mySelect">
+   <text class='arae'>成都</text>    
+    <text class='hot'>热映</text>
+    <text class='loading'>待映</text>
+    <image class="search" src="../../images/search.png"></image>
+  </view>
+
+  <view class='item' wx:for='{{movieLists}}' wx:key bindtap='onMovieItemHandler' data-movieId='{{item.movieId}}'>
+    <image class='itemImg' src='{{item.pic_url}}' />
+    <view class='info'>
+      <view class='movieName'>{{item.movieName}}</view>
+      <view class='juqing'>剧情，喜剧，家庭</view>
+      <view class='juqing'>主演：丹尼斯，塞琳，普雷斯科...</view>
+      <view class='fangying'>今日202家影院放映1984场</view>
+    </view>
+    <view class='pingfen'>
+      <view class='num'>9.3</view>
+      <button class='btn'>购票</button>
+    </view>
+  </view>

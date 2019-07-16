@@ -1,0 +1,94 @@
+/* pages/detail/detail.wxss */
+.movieinfo{
+  width: 100%;
+  height: 1000rpx;
+  /* position: relative; */
+ 
+  padding: 20rpx;
+}
+.img,.detail,.pingfen{
+  float: left
+}
+.img{
+  width: 33%;
+  height: 370rpx;
+}
+.detail{
+  width: 60%;
+  height: 430rpx;
+  margin-left: 30rpx;
+}
+.movieName{
+  font-weight:bold; 
+  font-size: 18px;
+  line-height: 1.3;
+}
+.juqing{
+  color: #444;
+  font-size: 12px;
+  line-height: 2; 
+}
+.actors{
+  width: 100%;
+  color: #444;
+  font-size: 12px; 
+  overflow: hidden;
+}
+.time{
+  color: #444;
+  font-size: 12px; 
+  line-height: 1.8; 
+}
+.year{
+  color: #444;
+  font-size: 12px; 
+}
+.jianjie{
+  padding: 20rpx;
+  width: 680rpx;
+  height: 210rpx;
+  overflow: hidden;
+  color: #444;
+  font-size: 14px;
+  text-align:justify; 
+}
+.des{
+  margin-top: 60rpx;
+  width: 100%;
+  height: 100rpx;
+}
+.want,.num{
+position: relative;
+  width: 45%;
+  height: 100%;
+  border-radius: 10rpx;
+  float: left;
+  font-size: 16px;
+  color: #444;
+}
+.wjx,.tx{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.num{
+  margin-left: 30rpx;
+}
+.tx{
+  left: 18%;
+}
+.btn{
+  color: #fff;
+  background-color: #DD403B;
+  border-radius: 10rpx;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 12px; 
+  padding-right: 0;
+  padding-left: 0;
+  position: absolute;
+  bottom: 0;
+}
